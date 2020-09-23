@@ -22,7 +22,7 @@
 #commentBox{
     padding: 5px;
 }
-#inputSearch{
+#inputSearch, #SearchingGoods{
     height: 28px;
     width: 240px;
 }
@@ -33,15 +33,25 @@
     padding-top: 4px
 }
 
-#submitButton{
+#submitButton, #signUpButton, #signInButton{
     height: 34px;
-    width: 68px;
+    width: 75px;
     background: #19588B;
     color: #fff;
     border:1px solid #19588B;
     border-radius: 5px;
 }
 #submitButton:hover{
+    background: #fff;
+    color: #19588B;
+    transition: 0.4s
+}
+#signUpButton:hover{
+    background: #fff;
+    color: #19588B;
+    transition: 0.4s
+}
+#signInButton:hover{
     background: #fff;
     color: #19588B;
     transition: 0.4s
@@ -135,7 +145,7 @@ header nav ul a:hover{
 
 /* The responsive idea is from Youtube tutorial */
 /* URL link is https://www.youtube.com/watch?v=gt8zOLQ8A0w */
-@media (max-width: 852px){
+@media (max-width: 1100px){
     header{
         padding: 0 30px;
     }
