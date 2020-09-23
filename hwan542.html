@@ -27,6 +27,8 @@
                     <li><a href="#" id="home" onclick="showHome();">Home</a></li>
                     <li><a href="#" id="news" onclick="showNews();">News</a></li>
                     <li><a href="#" id="displays" onclick="showDisplays();">Displays</a></li>
+                    <li><a href="#" id="displays" onclick="showStore();">Store</a></li>
+                    <li><a href="#" id="login" onclick="showLogin();">Login</a></li>
                     <li><a href="#" id="guestBook" onclick="showGuestBook();">Guest Book</a></li>
                 </ul>
             </nav>
@@ -76,6 +78,48 @@
 
                 </section>
             </div>
+
+            <div id="storeSection">
+                <section>
+                    <h1>Museum Store</h1>
+                    <hr>
+                    <p>Kia ora and welcome - every purchase you make helps us look after the treasures in the Museum collection.</p>                   
+                    <input type="text" placeholder="&#x1F50D;Search..." oninput="searchGoods()" id="SearchingGoods">
+                    <p id="displayGoods"></p>
+
+                </section>
+            </div>
+
+            <div id="signUpSection">
+                <section>
+                    <h1>Join us!</h1>
+                    <hr>
+                    <label for="nameField"><b>User Name</b></label><br>
+                    <input type="text" id="nameField" required>
+                    <br><br>
+                    <label for="passwordField"><b>Password</b></label><br>
+                    <input type="text" id="passwordField" required>
+                    <br><br>
+                    <label for="addressField"><b>Address</b></label><br>
+                    <input type="text" id="addressField" required><br><br>
+                    <input type="submit" value="Sign up" onclick="sendInfo()" id="signUpButton">
+                </section>
+            </div>
+            
+            <div id="loginSection">
+                    <section>
+                        <h1>Please Log in</h1>
+                        <hr>
+                        <label for="loginName"><b>User Name</b></label><br>
+                        <input type="text" id="loginName" required>
+                        <br><br>
+                        <label for="loginPassword"><b>Password</b></label><br>
+                        <input type="password" id="loginPassword" required>
+                        <br><br>
+                        <input type="submit" value="Sign in" onclick="checkInfo()" id="signInButton">
+                        <p id="userName"></p>
+                    </section>
+                </div>
 
             <div id="guestBookSection">
                 <section>
